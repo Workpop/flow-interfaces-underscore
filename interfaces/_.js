@@ -30,7 +30,8 @@ declare class _UnderscoreChain_ {
 }
 
 declare class _Underscore_ {
-  chain(object: Object): _UnderscoreChain_;
+  get(object: Object): any;
+  chain(object: Object | array: Array<any>): _UnderscoreChain_;
   each(list: Array<any> | Object, iteratee: _cb_.iterateeObject | _cb_.iterateeArray): Array<any> | Object;
   each(list: Array<any> | Object, iteratee: _cb_.iterateeObject | _cb_.iterateeArray, context: Object): Array<any> | Object;
   filter(list: Array<any>, predicate: _cb_.predicate): Array<any>;

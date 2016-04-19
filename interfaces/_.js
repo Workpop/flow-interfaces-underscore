@@ -20,6 +20,7 @@ declare class _UnderscoreChain_ {
   each(iteratee: _cb_.iterateeObject | _cb_.iterateeArray, context: Object): _UnderscoreChain_;
   filter(predicate: _cb_.predicate): _UnderscoreChain_;
   filter(predicate: _cb_.predicate, contect: Object): _UnderscoreChain_;
+  find<T>(properties: {}): _UnderscoreChain_;
   findWhere<T>(properties: {}): _UnderscoreChain_;
   map(iteratee: _cb_.iterateeObject | _cb_.iterateeArray): _UnderscoreChain_;
   map(iteratee: _cb_.iterateeObject | _cb_.iterateeArray, context: Object): _UnderscoreChain_;
